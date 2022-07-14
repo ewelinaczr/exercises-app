@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.category_name {
+  margin: 2rem 4rem;
+  margin-top: 5rem;
+  justify-content: right;
+  text-align: right;
+  align-items: flex-end;
+}
+.category_desc {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: right;
+  .category_desc_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    .icon {
+      color: $accent_color;
+    }
+    h1 {
+      font-size: 3.2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.grid {
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem 0rem;
+  background-color: yellowgreen;
+}

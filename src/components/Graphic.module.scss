@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.box {
+  background-color: $dark_color;
+  display: grid;
+  margin: auto;
+  max-width: 50rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.6rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed";
+  color: white;
+  margin-bottom: 2rem;
+  .icon {
+    justify-self: center;
+    color: linear-gradient(#afeb29, #ff4419);
+    opacity: 1;
+  }
+  .descriptions_left {
+    justify-self: right;
+    justify-content: right;
+    text-align: right;
+  }
+  .descriptions_right {
+    justify-self: left;
+    justify-content: left;
+    text-align: left;
+  }
+  .descriptions_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .icon_small {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

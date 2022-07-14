@@ -1,0 +1,63 @@
+@import "../../variables";
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $dark_color;
+  position: relative;
+  .text {
+    margin: 0 4rem;
+    text-align: center;
+    .message {
+      margin-top: 2rem;
+      font-size: 10rem;
+      font-family: "Monoton", cursive;
+      color: white;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .explore {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      .message_small {
+        font-size: 2rem;
+        color: white;
+        font-family: "Roboto Condensed";
+        font-weight: 400;
+      }
+      button {
+        padding: 1rem 1.4rem;
+        background-color: $accent-color;
+        border: none;
+        color: white;
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    .photo {
+      width: 100%;
+      object-fit: cover;
+    }
+    .slogan {
+      color: white;
+      margin-top: 1rem;
+      position: absolute;
+      bottom: 15rem;
+      left: 50%;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      span {
+        font-weight: 700;
+        font-size: 5rem;
+        span {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}

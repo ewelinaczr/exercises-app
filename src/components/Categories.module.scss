@@ -1,0 +1,8 @@
+@import "../../variables";
+
+.box {
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}

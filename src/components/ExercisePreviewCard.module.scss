@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.box {
+  // background-color: yellow;
+  position: relative;
+  text-align: center;
+  .graphic {
+    // width: 100%;
+    object-fit: cover;
+    padding: 0 3rem;
+  }
+  .labels {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-end;
+    justify-content: right;
+    text-align: right;
+    .label_target {
+      background-color: $accent-color;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .label_bodypart {
+      background-color: $dark_color;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .label_play {
+      background-color: #999;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 3rem;
+    }
+  }
+  .description {
+    background-color: $dark_color;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    .icon {
+      color: $accent-color;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
