@@ -6,16 +6,16 @@ import SearchContext from "../context/searchContext";
 
 export default function ExercisesPreview() {
   const { exercises, category } = useContext(SearchContext);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [exercisesPerPage] = useState(6);
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [exercisesPerPage] = useState(6);
 
   // Pagination
-  const indexOfLastExercise = currentPage * exercisesPerPage;
-  const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
-    indexOfFirstExercise,
-    indexOfLastExercise
-  );
+  // const indexOfLastExercise = currentPage * exercisesPerPage;
+  // const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
+  // const currentExercises = exercises.slice(
+  //   indexOfFirstExercise,
+  //   indexOfLastExercise
+  // );
 
   return (
     <Fragment>
