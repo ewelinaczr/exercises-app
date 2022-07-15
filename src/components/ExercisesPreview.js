@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { Fragment, useContext, useState } from "react";
 import styles from "./ExercisesPreview.module.scss";
 import ExercisePreviewCard from "./ExercisePreviewCard";
 import { BiDumbbell } from "react-icons/bi";
@@ -6,7 +6,17 @@ import SearchContext from "../context/searchContext";
 
 export default function ExercisesPreview() {
   const { exercises, category } = useContext(SearchContext);
-  // console.log(exercises);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [exercisesPerPage] = useState(6);
+
+  // Pagination
+  const indexOfLastExercise = currentPage * exercisesPerPage;
+  const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
+  const currentExercises = exercises.slice(
+    indexOfFirstExercise,
+    indexOfLastExercise
+  );
+
   return (
     <Fragment>
       <div className={styles.category_name}>

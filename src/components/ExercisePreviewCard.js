@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ExercisePreviewCard.module.scss";
 import { Link } from "react-router-dom";
 import { BiDumbbell } from "react-icons/bi";
+import { IoPlay } from "react-icons/io5";
 
 export default function ExercisePreviewCard({ exercise }) {
   return (
@@ -19,7 +20,9 @@ export default function ExercisePreviewCard({ exercise }) {
           <div className={styles.label_target}>{exercise.target}</div>
           <div className={styles.label_bodypart}>{exercise.bodyPart}</div>
           <Link to={`/exercise/${exercise.id}`}>
-            <div className={styles.label_play}> play</div>
+            <div className={styles.label_play}>
+              <IoPlay size={20} />
+            </div>
           </Link>
         </div>
       </div>
