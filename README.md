@@ -1,5 +1,5 @@
-Project under development
-NETLIFY DEMO LINK:
+Project under development  
+NETLIFY DEMO LINK: https://ff-gym-exercises-app.netlify.app/
 
 # Getting Started with Create React App
 
