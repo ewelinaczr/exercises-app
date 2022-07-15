@@ -14,9 +14,7 @@ const imgSrc =
 function SingleCategory({ el }) {
   const { setCategory, exercises, category } = useContext(SearchContext);
 
-  console.log(category);
-  const catEl = exercises.filter((el) => el.bodyPart === "waist");
-  console.log(catEl);
+  // const catEl = exercises.filter((el) => el.bodyPart === "waist");
 
   return (
     <Fragment>

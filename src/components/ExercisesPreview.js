@@ -8,7 +8,6 @@ export default function ExercisesPreview() {
   const { exercises, category } = useContext(SearchContext);
   // const [currentPage, setCurrentPage] = useState(1);
   // const [exercisesPerPage] = useState(6);
-
   // Pagination
   // const indexOfLastExercise = currentPage * exercisesPerPage;
   // const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
@@ -39,7 +38,7 @@ export default function ExercisesPreview() {
       </div>
 
       <div className={styles.grid}>
-        {exercises.map((el, index) => (
+        {Object.keys(exercises).map((el, index) => (
           <ExercisePreviewCard key={index} exercise={el} />
         ))}
       </div>
