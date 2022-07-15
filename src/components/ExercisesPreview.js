@@ -38,7 +38,7 @@ export default function ExercisesPreview() {
       </div>
 
       <div className={styles.grid}>
-        {Object.keys(exercises).map((el, index) => (
+        {exercises.map((el, index) => (
           <ExercisePreviewCard key={index} exercise={el} />
         ))}
       </div>
